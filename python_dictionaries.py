@@ -42,3 +42,42 @@
 # print(f'list:\n{glossary["list"]}')
 # print(f'tuple:\n{glossary["tuple"]}')
 # print(f'append():\n{glossary["append()"]}')
+
+# A dictionary containing individuals' favorite programming languages
+favourite_languages = {
+    'boris': 'javaScript',
+    'manzi': 'c',
+    'jean paul': 'python',
+    'enzo': 'c#',
+    'rukundo': 'go',
+}
+
+# Looping through all the key-value pairs of the above dictionary
+# for name, language in favourite_languages.items():
+#     print(f"{name.title()}'s favourite language is {language.title()}.")
+
+
+# Looping through all the keys of the favourite_languages dictionary
+# for name in favourite_languages.keys():
+#     print(name.title())
+
+# Accessing the value of the keys insided the loop by using the current key
+# friends = ['manzi', 'boris']
+# for name in favourite_languages.keys():
+#     print(f"Hey {name.title()}")
+
+#     if name in friends:
+#         language = favourite_languages[name].title()
+#         print(f"\t{name.title()}, I see you love {language}")
+
+# Checking if a certain individual was polled
+# if 'clemence' not in favourite_languages.keys():
+#     print("Clemence, please take our poll!")
+
+# Looping through all keys in order using the sorted() method
+# for name in sorted(favourite_languages.keys()):
+#     print(f"{name.title()}, thank you for taking the poll.")
+
+# Looping through all the values using the values() method
+for language in favourite_languages.values():
+    print(language.title())
