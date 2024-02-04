@@ -48,8 +48,7 @@ favourite_languages = {
     'boris': 'javaScript',
     'manzi': 'c',
     'jean paul': 'python',
-    'enzo': 'c#',
-    'rukundo': 'go',
+    'rukundo': 'javascript',
 }
 
 # Looping through all the key-value pairs of the above dictionary
@@ -79,5 +78,7 @@ favourite_languages = {
 #     print(f"{name.title()}, thank you for taking the poll.")
 
 # Looping through all the values using the values() method
-for language in favourite_languages.values():
+print('The following languages have been polled:')
+for language in set(favourite_languages):
     print(language.title())
+# The values() method doesn't take into account the repeated values. Therefore, in order to avoid repetition, we use the set() method. A set is a collection of of unique items.
