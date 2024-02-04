@@ -44,12 +44,12 @@
 # print(f'append():\n{glossary["append()"]}')
 
 # A dictionary containing individuals' favorite programming languages
-favourite_languages = {
-    'boris': 'javaScript',
-    'manzi': 'c',
-    'jean paul': 'python',
-    'rukundo': 'javascript',
-}
+# favourite_languages = {
+#     'boris': 'python',
+#     'manzi': 'c',
+#     'jean paul': 'javascript',
+#     'rukundo': 'python',
+# }
 
 # Looping through all the key-value pairs of the above dictionary
 # for name, language in favourite_languages.items():
@@ -77,8 +77,73 @@ favourite_languages = {
 # for name in sorted(favourite_languages.keys()):
 #     print(f"{name.title()}, thank you for taking the poll.")
 
-# Looping through all the values using the values() method
-print('The following languages have been polled:')
-for language in set(favourite_languages.values()):
-    print(language.title())
+# # Looping through all the values using the values() method
+# print('The following languages have been polled:')
+# for language in set(favourite_languages.values()):
+#     print(language.title())
 # The values() method doesn't take into account the repeated values. Therefore, in order to avoid repetition, we use the set() method. A set is a collection of of unique items.
+
+# # Glossary
+# glossary = {
+#     'conditional test': 'an expression that can evaluated as "True" or "False".',
+#     'dictionary': 'a collection of key-value pairs.',
+#     'list': 'a collection of items in a particular order',
+#     'tuple': "a list with (). It is used to store values that can't be changed.",
+#     'append()': 'an inbuilt Python method that adds a new item to a list.',
+#     'set': 'a collection of unique items.',
+#     'values()': 'an inbuilt Python method that returns values from a dictionary without their associated keys.',
+#     'keys()': 'an inbuilt Python method that returns a sequence of keys from a dictionary.',
+#     'items()': 'an inbuilt Python method that returns a sequence of key-value pairs from a dictionary.',
+#     'variable': "a label assigned to a value which helps in referencing it once there's a need to access it",
+# }
+
+# for term, definition in glossary.items():
+#     print(f"Term: {term}")
+#     print(f"Definition: {definition}\n")
+
+# Rivers 
+rivers = {
+    'nile': 'sudan',
+    'congo': 'drc',
+    'niger': 'nigeria',
+}
+
+# Loop that prints a sentence about each river.
+# for river, country in rivers.items():
+#         if country == 'drc':
+#                 print(f"The {river.title()} river runs through {country.upper()}")
+#         else:
+#                 print(f"The {river.title()} river runs through {country.title()}")
+
+
+# Loop that prints the name of each river in the dictionary.
+# for river in rivers:
+#     print(river.title())
+
+
+# Loop that prints the name of each country in the dictionary.
+# for country in rivers.values():
+#     if country == 'drc':
+#         print(country.upper())
+#     else:
+#         print(country.title())
+
+
+# Poll of favourite programming languages
+favourite_languages = {
+    'boris': 'python',
+    'manzi': 'c',
+    'jean paul': 'javascript',
+    'rukundo': 'python',
+}
+
+# People who should take the poll.
+pollers = ['boris', 'robert', 'manzi', 'john']
+
+# Looping through the above list.
+for poller in pollers:
+    if poller in favourite_languages:
+        print(f"{poller.title()}, thank you for responding.")
+    else:
+        print(f"{poller.title()}, take the poll please!")
+  
