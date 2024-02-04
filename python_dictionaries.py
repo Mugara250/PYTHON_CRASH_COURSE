@@ -131,19 +131,25 @@ rivers = {
 
 # Poll of favourite programming languages
 favourite_languages = {
-    'boris': 'python',
+    'boris': 'javascript',
     'manzi': 'c',
-    'jean paul': 'javascript',
-    'rukundo': 'python',
+    'jean paul': 'python',
+    'rukundo': 'javascript',
 }
 
-# People who should take the poll.
-pollers = ['boris', 'robert', 'manzi', 'john']
+for language in set(favourite_languages.values()):
+    print(language.title())
 
-# Looping through the above list.
-for poller in pollers:
-    if poller in favourite_languages:
-        print(f"{poller.title()}, thank you for responding.")
-    else:
-        print(f"{poller.title()}, take the poll please!")
-  
+# # People who should take the poll.
+# pollers = ['boris', 'robert', 'manzi', 'john']
+
+# # Looping through the above list.
+# for poller in pollers:
+#     if poller in favourite_languages:
+#         print(f"{poller.title()}, thank you for responding.")
+#     else:
+#         print(f"{poller.title()}, take the poll please!")
+
+
+# Information about different people.
+    
