@@ -130,15 +130,15 @@ rivers = {
 
 
 # Poll of favourite programming languages
-favourite_languages = {
-    'boris': 'javascript',
-    'manzi': 'c',
-    'jean paul': 'python',
-    'rukundo': 'javascript',
-}
+# favourite_languages = {
+#     'boris': 'javascript',
+#     'manzi': 'c',
+#     'jean paul': 'python',
+#     'rukundo': 'javascript',
+# }
 
-for language in set(favourite_languages.values()):
-    print(language.title())
+# for language in set(favourite_languages.values()):
+#     print(language.title())
 
 # # People who should take the poll.
 # pollers = ['boris', 'robert', 'manzi', 'john']
@@ -152,4 +152,127 @@ for language in set(favourite_languages.values()):
 
 
 # Information about different people.
+# people_info = {
+#     'person_1': {
+#         'first_name': 'joslyn',
+#         'last_name': 'karenzi',
+#         'city': 'kigali',
+#     },
+#     'person_2': {
+#         'first_name': 'boris',
+#         'last_name': 'nyilindekwe',
+#         'city': 'kampala',
+#     },
+#     'person_3': {
+#         'first_name': 'fred',
+#         'last_name': 'ndahiro',
+#         'city': 'vancouver',
+#     },
+# }
+
+# for person, personal_info in people_info.items():
+#     print(f"\n{person.title()}")
+#     full_name = f"{personal_info['first_name']} {personal_info['last_name']}"
+#     location = personal_info['city']
+
+#     print(f"\tFull name: {full_name.title()}")
+#     print(f"\tLocation: {location.title()}")
+
+# A list with dictionaries which contain information about pets.
+# pet_0 = {
+#     'name': 'max',
+#     'animal': 'dog',
+#     'owner': 'golbert',
+# }
+
+# pet_1 = {
+#     'name': 'babu',
+#     'animal': 'rabbit',
+#     'owner': 'delice',
+# }
+
+# pet_2 = {
+#     'name': 'shito',
+#     'animal': 'mouse',
+#     'owner': 'angelo',
+# }
+
+# pet_3 = {
+#     'name': 'titi',
+#     'animal': 'cat',
+#     'owner': 'liza',
+# }
+
+# pet_4 = {
+#     'name': 'vipora',
+#     'animal': 'snake',
+#     'owner': 'rusibana',
+# }
+
+# pets = [pet_0, pet_1, pet_2, pet_3, pet_4]
+
+# for pet in pets:
+#     print(f"\nPet:")
+#     print(f"\tName: {pet['name'].title()}")
+#     print(f"\tType of animal: {pet['animal'].title()}")
+#     print(f"\tName: {pet['name'].title()}")
+
+# Favorite places
+# favorite_places = {
+#     'peter': ['paris', 'montreal', 'nairobi'],
+#     'lorna': ['gisenyi', 'convention', 'miami'],
+#     'yvonne': ['marriot', 'papyrus', 'dubai'],
+# }
+
+# for person, places in favorite_places.items():
+#     print(f"\n{person.title()}:")
+#     for place in places:
+#         print(f"\n\t{place.title()}")
+
+# People's favorite numbers
+# favorite_numbers = {
+#     'nicholas': [4, 5, 9],
+#     'thierry': [7, 3],
+#     'beni': [1, 3, 5],
+#     'tony': [9, 4, 12],
+#     'lee': [5, 13, 5, 8],
+# }
+
+# for person, numbers in favorite_numbers.items():
+#     print(f"\n{person.title()}'s favorite numbers are:")
+#     for number in numbers:
+#         print(f"\n\t{number}")
+
+
+# Cities
+cities = {
+    'kigali': {
+        'country': 'rwanda',
+        'population': '1_288_000',
+        'fact': 'one of the cleanest cities in Africa',
+    },
+    'new York': {
+        'country': 'usa',
+        'population': '8_335_897 ',
+        'fact': 'one of the most culturally diverse city in the world.',
+    },
+    'vatican': {
+        'country': 'vatican',
+        'population': '764',
+        'fact': 'residence of the Pope',
+    },
+}
+
+for city, city_info in cities.items():
+
+    if city_info['country'] == 'usa':
+        print(f"\n{city.title()}:")
+        print(f"\t{city_info['country'].upper()}")
+        print(f"\t{city_info['population']}")
+        print(f"\t{city_info['fact'].title()}")
+    else:
+        print(f"\n{city.title()}:")
+        print(f"\t{city_info['country'].title()}")
+        print(f"\t{city_info['population']}")
+        print(f"\t{city_info['fact'].title()}")
     
