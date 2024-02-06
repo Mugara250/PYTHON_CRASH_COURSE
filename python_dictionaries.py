@@ -267,12 +267,12 @@ for city, city_info in cities.items():
 
     if city_info['country'] == 'usa':
         print(f"\n{city.title()}:")
-        print(f"\t{city_info['country'].upper()}")
-        print(f"\t{city_info['population']}")
-        print(f"\t{city_info['fact'].title()}")
+        print(f"\n\t{city_info['country'].upper()}")
+        print(f"\n\t{city_info['population']}")
+        print(f"\n\t{city_info['fact'].title()}")
     else:
         print(f"\n{city.title()}:")
-        print(f"\t{city_info['country'].title()}")
-        print(f"\t{city_info['population']}")
-        print(f"\t{city_info['fact'].title()}")
+        print(f"\n\t{city_info['country'].title()}")
+        print(f"\n\t{city_info['population']}")
+        print(f"\n\t{city_info['fact'].title()}")
     
