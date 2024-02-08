@@ -216,16 +216,17 @@
 # for name, response in responses.items():
 #     print(f"{name.title()} would like to visit {response.title()}!")
 
-# Using the continue statement in the while loop
 
-# Looping through numbers 1-10 and printing the odd numbers only
+# # Using the continue statement in the while loop
 
-current_number = 0
+# # Looping through numbers 1-10 and printing the odd numbers only
 
-while current_number < 10:
-    current_number += 1
+# current_number = 0
 
-    if current_number % 2 == 0:
-        continue
+# while current_number < 10:
+#     current_number += 1
 
-    print(current_number)
+#     if current_number % 2 == 0:
+#         continue
+
+#     print(current_number)
