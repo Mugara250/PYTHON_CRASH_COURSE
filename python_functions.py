@@ -9,21 +9,22 @@
 
 # # Favorite Book.
 # def favorite_book(title):
+# """ Prints a favorite book """
 #     print(f"One of my favorite books is {title.title()}")
 
 # favorite_book('the god delusion')
 
 # # T-shirt
-# """ A function that prints the size of a shirt and the message printed on it """
 # def make_shirt(size, message):
+# """ A function that prints the size of a shirt and the message printed on it """
 #     print(f"\nThe shirt's size is '{size}' and the message written on it is\n'{message}'")
 
 # make_shirt('large', 'We are the world.') # Calling the function with positional arguments.
 # make_shirt(size='medium', message="\Let's avoid toxic ideas!") # Calling the same function with keyword arguments.
 
 # # Large Shirts.
-# """ A function that prints the size of a shirt and the message printed on it """
 # def make_shirt(size='large', message='I love Python'):
+# """ A function that prints the size of a shirt and the message printed on it """
 #     print(f"\nThe shirt's size is '{size}' and the message written on it is\n'{message}'")
 
 # make_shirt()
@@ -31,8 +32,8 @@
 # make_shirt('small', 'Rwanda uri nziza')
 
 # # Cities
-# """ A function that displays the name of a city and the country it's located in. """
 # def describe_city(name, country='Rwanda'):
+# """ A function that displays the name of a city and the country it's located in. """
 #     print(f"\n{name.title()} is in {country.title()}.")
 
 # describe_city('Kigali')
@@ -40,8 +41,8 @@
 # describe_city(country="cote d'ivoire", name='abidjan')
 
 # # City names
-# """ A function that returns the formatted string of a city and its country. """
 # def city_country(city, country):
+# """ A function that returns the formatted string of a city and its country. """
 #     fullname = f"{city}, {country}"
 #     return fullname.title()
 
@@ -54,8 +55,8 @@
 # print(result)
 
 # # Album
-# """ A function that returns a dictionary describing an album i.e. the artist's name and the album title """
 # def make_album(artist_name, album_title, songs_number=None):
+# """ A function that returns a dictionary describing an album i.e. the artist's name and the album title """
 #     if songs_number:
 #         album = album = {'artist': artist_name.title(), 'title': album_title.title(), 'songs': songs_number}
 #         return album
@@ -73,8 +74,8 @@
 # print(album4)
 
 # # User Albums
-# """ A function that returns a dictionary describing an album i.e. the artist's name and the album title """
 # def make_album(artist_name, album_title, songs_number=None):
+# """ A function that returns a dictionary describing an album i.e. the artist's name and the album title """
 #     if songs_number:
 #         album = album = {'artist': artist_name.title(), 'title': album_title.title(), 'songs': songs_number}
 #         return album
@@ -104,8 +105,8 @@
 
 
 # # Messages
-# """ A function that prints text messages stored in a list separately """
 # def show_messages(messages):
+# """ A function that prints text messages stored in a list separately """
 #     # for loop for looping through the list and printing each message stored in it separately
 #     for message in messages:
 #         print(message)
@@ -115,9 +116,9 @@
 # show_messages(messsages)
 
 # # Sending messages
-# """ A function that prints each text message and moves each message to a new list called sent_messages """
 # # Printing messages.
 # def send_messages(messages):
+# """ A function that prints each text message and moves each message to a new list called sent_messages """
 #     sent_messages = []
 #     for message in messages:
 #         print(f"Sending message: \n{message}")
@@ -141,7 +142,6 @@
 # print(f"List of sent messages: {sent_messages}")
 
 # # Sandwiches
-# """ A function that accepts a list of items a person wants on a sandwich and prints a summary of the sandwich being ordered """
 # def sandwich(*features):
 #     """Summarize the sandwich being ordered """
 #     print("\nThe sandwich being ordered has the following features: ")
@@ -154,8 +154,8 @@
 # sandwich('sausage', 'butter', 'coconuts')
 
 # # User profile
-# """ Obtaining user information """
 # def build_profile(first, last, **user_info):
+# """ Obtaining user information """
 #     user_info['first_name'] = first
 #     user_info['last_name'] = last
 #     return user_info
@@ -165,8 +165,8 @@
 # print(user_info)
 
 # # Cars
-# """ Car informataion """
 # def make_car(manufacturer, model, **car_info):
+# """ Car informataion """
 #     car_info['manufacturer_name'] = manufacturer
 #     car_info['model_name'] = model
 #     return car_info
