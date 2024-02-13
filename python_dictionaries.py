@@ -102,11 +102,11 @@
 #     print(f"Definition: {definition}\n")
 
 # Rivers 
-rivers = {
-    'nile': 'sudan',
-    'congo': 'drc',
-    'niger': 'nigeria',
-}
+# rivers = {
+#     'nile': 'sudan',
+#     'congo': 'drc',
+#     'niger': 'nigeria',
+# }
 
 # Loop that prints a sentence about each river.
 # for river, country in rivers.items():
