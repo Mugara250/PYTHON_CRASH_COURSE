@@ -110,54 +110,100 @@
 # restaurant.increment_number_served(3)
 # print(f"Number of customers served: {restaurant.number_served}")
 
-# Login Attempts
-class User:
-    """ Representing a user """
+# # Login Attempts
+# class User:
+#     """ Representing a user """
 
-    def __init__(self, first_name, last_name, age, email, phone_number):
+#     def __init__(self, first_name, last_name, age, email, phone_number):
+#         """ Initializing our class attributes """
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.age = age
+#         self.email = email
+#         self.phone_number = phone_number
+#         self.login_attempts = 0
+
+#     def describe_user(self):
+#         """ Summarizing user information """
+#         print("\nUser's information: ")
+#         print(f"\nFirst Name: {self.first_name.title()}")
+#         print(f"Last Name: {self.last_name.title()}")
+#         print(f"Age: {self.age}")
+#         print(f"Email: {self.email}")
+#         print(f"Phone number: {self.phone_number}")
+
+#     def greet_user(self):
+#         """ Printing a personalized message to each user """
+#         self.full_name = f"{self.first_name.title()} {self.last_name.title()}"
+#         print(f"\nHello {self.full_name}")
+
+#     def increment_login_attempts(self):
+#         """ Increments the value of login_attempts by 1"""
+#         self.login_attempts += 1
+
+#     def reset_login_attempts(self):
+#         """ Resets the value of login_attempts to 0 """
+#         self.login_attempts = 0
+
+
+# # Creating instances
+# user_0 = User('rugogwe', 'thierry', 23, 'rugothierry@gmail.com', +250_789_034_577)
+# print(user_0.login_attempts)
+# # Calling the increment_login_attempts() several times to increase the value of login_attempts
+# user_0.increment_login_attempts()
+# print(user_0.login_attempts)
+# user_0.increment_login_attempts()
+# print(user_0.login_attempts)
+# user_0.increment_login_attempts()
+# print(user_0.login_attempts)
+# user_0.increment_login_attempts()
+# print(user_0.login_attempts)
+# # Resetting the value of login_attempts to 0 using reset_login_attempts() method 
+# user_0.reset_login_attempts()
+# print(user_0.login_attempts)
+
+# Ice Cream Stand
+class Restaurant:
+    """ Modeling a restaurant """
+
+    def __init__(self, restaurant_name, cuisine_type):
         """ Initializing our class attributes """
-        self.first_name = first_name
-        self.last_name = last_name
-        self.age = age
-        self.email = email
-        self.phone_number = phone_number
-        self.login_attempts = 0
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+        self.number_served = 0
 
-    def describe_user(self):
-        """ Summarizing user information """
-        print("\nUser's information: ")
-        print(f"\nFirst Name: {self.first_name.title()}")
-        print(f"Last Name: {self.last_name.title()}")
-        print(f"Age: {self.age}")
-        print(f"Email: {self.email}")
-        print(f"Phone number: {self.phone_number}")
+    def describe_restaurant(self):
+        """ Displaying information about the restaurant """
+        print(f"\n{self.restaurant_name} restaurant cooks {self.cuisine_type} cuisine.")
 
-    def greet_user(self):
-        """ Printing a personalized message to each user """
-        self.full_name = f"{self.first_name.title()} {self.last_name.title()}"
-        print(f"\nHello {self.full_name}")
+    def open_restaurant(self):
+        """ Restaurant is open """
+        print(f"\n{self.restaurant_name} restaurant is open!")
 
-    def increment_login_attempts(self):
-        """ Increments the value of login_attempts by 1"""
-        self.login_attempts += 1
+    def set_number_served(self, number_served):
+        """ Set the number of customers been served """
+        self.number_served = number_served
 
-    def reset_login_attempts(self):
-        """ Resets the value of login_attempts to 0 """
-        self.login_attempts = 0
+    def increment_number_served(self, number_served):
+        """ Increments the number of customers been served """
+        self.number_served += number_served
 
+# Creating a new class IceCreamStand based on the Restaurant class
+class IceCreamStand(Restaurant):
+    """ Representing a specific kind of restaurant called ice cream stand """
+    def __init__(self, restaurant_name, cuisine_type):
+        """ Initializing attributes of the Restaurant class and 
+        making them available in the IceCreamStand class.
+        Initializing attributes specific to the IceCreamStand class or ice cream stand restaurant.
+          """
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = ['vanilla', 'avocado', 'mango', 'chocolate', 'blueberry']
 
-# Creating instances
-user_0 = User('rugogwe', 'thierry', 23, 'rugothierry@gmail.com', +250_789_034_577)
-print(user_0.login_attempts)
-# Calling the increment_login_attempts() several times to increase the value of login_attempts
-user_0.increment_login_attempts()
-print(user_0.login_attempts)
-user_0.increment_login_attempts()
-print(user_0.login_attempts)
-user_0.increment_login_attempts()
-print(user_0.login_attempts)
-user_0.increment_login_attempts()
-print(user_0.login_attempts)
-# Resetting the value of login_attempts to 0 using reset_login_attempts() method 
-user_0.reset_login_attempts()
-print(user_0.login_attempts)
+    def show_flavors(self):
+        print("The following is a list of ice cream flavors: ")
+        for flavor in self.flavors:
+            print(f"\t-{flavor}")
+
+# Creating instances of our IceCreamStand and calling the show_flavors method
+ice_cream_stand = IceCreamStand('Ubumwe', 'Rwandan')
+ice_cream_stand.show_flavors()
