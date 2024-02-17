@@ -404,3 +404,66 @@
 # car.battery_power.describe_battery()
 # car.battery_power.get_range()
 
+
+# Dice
+# Importing the module we will need in our program
+from random import randint
+class Die:
+    """ Representing a die """
+    def __init__(self, sides=6):
+        """ Initializing class attributes """
+        self.sides = sides
+
+    def roll_die(self):
+        """A method that prints a random number between 1 and the
+        number of sides the die has.
+        """
+        print(randint(1,self.sides))
+
+
+
+# # Making a 6-sided die and rolling it 10 times
+# die = Die()
+# die.roll_die()
+# die.roll_die()
+# die.roll_die()
+# die.roll_die()
+# die.roll_die()
+# die.roll_die()
+# die.roll_die()
+# die.roll_die()
+# die.roll_die()
+# die.roll_die()
+# die.roll_die()
+
+# # Making 10-sided die and rolling it 10 times.
+# die_10 = Die(10)
+# die_10.roll_die()
+# die_10.roll_die()
+# die_10.roll_die()
+# die_10.roll_die()
+# die_10.roll_die()
+# die_10.roll_die()
+# die_10.roll_die()
+# die_10.roll_die()
+# die_10.roll_die()
+# die_10.roll_die()
+# die_10.roll_die()
+
+# # Making a 20-sided die and rolling it 10 times.
+# die_20 = Die(20)
+# die_20.roll_die()
+# die_20.roll_die()
+# die_20.roll_die()
+# die_20.roll_die()
+# die_20.roll_die()
+# die_20.roll_die()
+# die_20.roll_die()
+# die_20.roll_die()
+# die_20.roll_die()
+# die_20.roll_die()
+# die_20.roll_die()
+
+
+# Lottery
+        
