@@ -465,5 +465,44 @@ class Die:
 # die_20.roll_die()
 
 
-# Lottery
-        
+# # Lottery
+# from random import choice
+# selection_list = (1, 4, 5, 6 ,9, 2, 7, 10, 3, 13, 'a', 'c', 'd', 'e', 'f')
+
+# randomly_selected = [] # Store the randomly selected letters or numbers
+
+# while len(randomly_selected) < 4:
+#     selection = choice(selection_list)
+#     if selection not in randomly_selected:
+#         randomly_selected.append(selection)
+
+# print(f"Any ticket matching {randomly_selected} wins!")
+
+
+# Lottery analysis
+from random import choice
+# Defining the selection_list and my_ticket
+selection_list = (1, 4, 5, 6 ,9, 2, 7, 10, 3, 13, 'a', 'c', 'd', 'e', 'f')
+my_ticket = (1, 'e', 3, 10)
+
+# Initializing variables
+attempts = 0 # Keep track how many attempts it takes to win
+winning_ticket = False # Indicates whether we have found a winning ticket
+
+# Initializing a loop that will stop until winning_ticket=True
+while not winning_ticket:
+# Generate random ticket
+    random_ticket = []
+
+    while len(random_ticket) < 4:
+        selection = choice(selection_list)
+        if selection not in random_ticket:
+            random_ticket.append(selection)
+
+    # Check if the random_ticket matches my_ticket
+    if tuple(random_ticket) == my_ticket:
+        winning_ticket = True
+
+    attempts += 1
+
+print(f"It took {attempts} to win the lottery with ticket {my_ticket}")

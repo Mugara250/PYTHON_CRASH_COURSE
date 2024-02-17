@@ -81,8 +81,9 @@
 # print('The following languages have been polled:')
 # for language in set(favourite_languages.values()):
 #     print(language.title())
-# The values() method doesn't take into account the repeated values. Therefore, in order to avoid repetition, we use the set() method. A set is a collection of of unique items.
 
+""" The values() method doesn't take into account the repeated values. Therefore, in order to avoid
+ repetition, we use the set() method. A set is a collection of of unique items."""
 # # Glossary
 # glossary = {
 #     'conditional test': 'an expression that can evaluated as "True" or "False".',
